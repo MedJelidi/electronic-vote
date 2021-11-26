@@ -1,46 +1,33 @@
-# pet-shop
+# Electronic Vote
 
-## Table of Contents
+## About
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
+A decentralized application on the Euthereum Blockchain that allows accounts to cast electronic votes for an electronic election between more than two candidates.
 
-## About <a name = "about"></a>
+## Prerequisites
 
-Write about 1-2 paragraphs describing the purpose of your project.
+[NPM](https://www.npmjs.com/) -
+[Truffle](https://trufflesuite.com/) -
+[Ganache](https://www.trufflesuite.com/ganache) -
+[MetaMask](https://metamask.io/)
 
-## Getting Started <a name = "getting_started"></a>
+## Usage
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+### Ganache
+Create a new Ganache workspace and link the truffle project by adding truffle-config.js to the workspace.
 
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
+### Truffle
+Enter project directory and run:
 ```
-Give examples
+truffle compile
 ```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
 ```
-Give the example
+truffle migrate
 ```
+### MetaMask
+Add the MetaMask extension to your browser, add a new network with details from Ganache workspace, then import an account from Ganache by parsing its private key in MetaMask.
 
-And repeat
-
+Finally, run:
 ```
-until finished
+npm run dev
 ```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
