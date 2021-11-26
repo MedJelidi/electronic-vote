@@ -7,12 +7,17 @@ A decentralized application on the Euthereum Blockchain that allows accounts to 
 ## Prerequisites
 
 [NPM](https://www.npmjs.com/) -
-[Truffle](https://trufflesuite.com/) -
 [Ganache](https://www.trufflesuite.com/ganache) -
+[Truffle](https://trufflesuite.com/) -
 [MetaMask](https://metamask.io/)
 
 ## Usage
 
+### NPM
+Enter working directory and run:
+```
+npm install
+```
 ### Ganache
 Create a new Ganache workspace and link the truffle project by adding truffle-config.js to the workspace.
 
