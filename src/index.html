@@ -7,6 +7,7 @@
     <title>Election Results</title>
     <!--Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -30,20 +31,45 @@
               </thead>
               <tbody id="candidatesResults"></tbody>
             </table>
-            <hr />
-            <p id="accountAddress" class="text-center"></p>
-            <form onSubmit="App.castVote(); return false;">
+            <hr>
+            <div id="account-section" class="text-center">
+              <p id="accountAddress"></p>
+            </div>
+            <form id="vote-form" onSubmit="App.castVote(); return false;">
               <div class="form-group">
                 <label for="candidatesSelect">Select Candidate</label>
                 <select class="form-control" id="candidatesSelect"></select>
               </div>
               <button type="submit" class="btn btn-primary">Vote</button>
-              <hr />
             </form>
           </div>
         </div>
       </div>
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-header-container text-center">
+        <h5 class="modal-title" id="addModalTitle">Add Candidate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="text-center">
+          <div class="form-group name-input">
+            <input id="nameInput" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="candidate-name">
+          </div>
+          <button type="button" class="btn btn-primary add-submit" onclick="App.addCandidate()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--Include all compiled plugins (below), or include individual files as needed -->

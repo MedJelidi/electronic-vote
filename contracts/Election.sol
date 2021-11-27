@@ -16,7 +16,7 @@ contract Election {
         uint256 voteCount;
     }
 
-    function addCandidate(string memory _name) private {
+    function addCandidate(string memory _name) public {
         candidatesCount++;
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
