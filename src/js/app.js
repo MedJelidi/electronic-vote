@@ -8,7 +8,8 @@ App = {
     return App.initWeb3();
   },
   initWeb3: function () {
-    App.web3Provider = web3.currentProvider;
+    const metaProvider = web3.currentProvider;
+    App.web3Provider = metaProvider;
     web3 = new Web3(web3.currentProvider);
     App.loadAccountData();
 
@@ -18,7 +19,10 @@ App = {
     web3.eth.getAccounts((err, accounts) => {
       allowedAccounts = accounts.slice(0, 2);
       console.log(allowedAccounts);
+      App.web3Provider = metaProvider;
+      web3 = new Web3(web3.currentProvider);
     });
+
     ethereum.on("accountsChanged", (a) => {
       App.account = a[0];
       App.updateAccountSection();

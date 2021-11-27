@@ -36,3 +36,14 @@ Finally, run:
 ```
 npm run dev
 ```
+
+## Results
+
+### Vote
+<div style="width:100%;height:0;padding-bottom:120%;position:relative;"><iframe src="https://giphy.com/embed/pHZrb4ZscB6apHTtcT" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/pHZrb4ZscB6apHTtcT">via GIPHY</a></p>
+
+### Add candidate
+<div style="width:100%;height:0;padding-bottom:120%;position:relative;"><iframe src="https://giphy.com/embed/rXQx0h3noPvcMAfCk5" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/rXQx0h3noPvcMAfCk5">via GIPHY</a></p>
+
+### Switch Account
+<div style="width:100%;height:0;padding-bottom:120%;position:relative;"><iframe src="https://giphy.com/embed/z8cOXWunrj24mFehOM" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/z8cOXWunrj24mFehOM">via GIPHY</a></p>
