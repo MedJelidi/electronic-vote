@@ -13,9 +13,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.6.1"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "ganache": "^6.4.5",
+    "ganache-cli": "^6.12.2",
+    "ganache-core": "^2.13.2",
     "jquery": "^3.6.0"
   }
 }

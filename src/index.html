@@ -31,7 +31,7 @@
               </thead>
               <tbody id="candidatesResults"></tbody>
             </table>
-            <hr>
+            <hr />
             <div id="account-section" class="text-center">
               <p id="accountAddress"></p>
             </div>
@@ -47,28 +47,53 @@
       </div>
     </div>
 
-<!-- Modal -->
-<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header modal-header-container text-center">
-        <h5 class="modal-title" id="addModalTitle">Add Candidate</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form class="text-center">
-          <div class="form-group name-input">
-            <input id="nameInput" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="candidate-name">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="addModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-header-container text-center">
+            <h5 class="modal-title" id="addModalTitle">Add Candidate</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <button type="button" class="btn btn-primary add-submit" onclick="App.addCandidate()">Submit</button>
-        </form>
+          <div class="modal-body">
+            <form class="text-center">
+              <div class="form-group name-input">
+                <input
+                  id="nameInput"
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  aria-label="Name"
+                  aria-describedby="candidate-name"
+                />
+              </div>
+              <button
+                id="submit-btn"
+                type="button"
+                class="btn btn-primary add-submit"
+                onclick="App.addCandidate()"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
 
     <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
